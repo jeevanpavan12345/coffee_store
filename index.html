@@ -2,15 +2,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Coffee Store</title>
   
 </head>
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
   :root{
     --white: #f9f9f9;
-    --black: #36383F;
-    --gray: rgb(78, 26, 55);
+    --black: rgb(78, 26, 55);
+    --merun: rgb(0, 0, 0);
 } /* variables*/
 
 /* Reset */
@@ -59,7 +59,7 @@ z-index: 1000;
     color: var(--white);
 }
 .menu a:hover{
-    background-color: var(--gray);
+    background-color: var(--merun);
 }
 .nav{
     max-height: 0;
@@ -78,7 +78,7 @@ z-index: 1000;
     position: relative;
     width: 24px;
 
-} /* Style span tag */
+}
 
 .hamb-line::before,
 .hamb-line::after{
@@ -99,7 +99,7 @@ z-index: 1000;
 
 .side-menu {
     display: none;
-} /* Hide checkbox */
+}
 .side-menu:checked ~ nav{
     max-height: 100%;
 }
@@ -133,7 +133,7 @@ body:has(.side-menu:checked) {
     }
     .menu a:hover{
         background-color: transparent;
-        color: var(--gray);
+        color: var(--merun);
 
     }
 
