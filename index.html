@@ -10,7 +10,7 @@
   :root{
     --white: #f9f9f9;
     --black: #36383F;
-    --gray: #85888C;
+    --gray: rgb(78, 26, 55);
 } /* variables*/
 
 /* Reset */
@@ -186,6 +186,7 @@ left: 40;
   position: absolute;
   content: "";
   top: 330;
+  color: white;
 }
 .b {
   position: relative;
@@ -321,7 +322,9 @@ margin: 10;
   .f {
     position: absolute;
     content: "";
-    top: 30;
+    top: 50;
+    left: 130;
+    color: white;
   }
 }
 
@@ -342,22 +345,37 @@ margin: 10;
   height: 1200px;
 }
 }
+.gallery_heading {
+position: absolute;
+content: "";
+top: 2100;
+left: 540;
+}
 .gallery_images {
   float: left;
-  width: 380px;
+  width: 300px;
   padding: 5px;
   margin: 10;
   position: relative;
   content: "";
-  top: 760;
-  left: 60;
+  top: 600;
+  left: 220;
+}
+
+@media screen and (max-width: 800px) {
+  .gallery_heading {
+position: absolute;
+content: "";
+left: 140;
+top: 50;
+  }
 }
 @media screen and (max-width: 800px) {
   .gallery {
     background-color: white;
     position: absolute;
-    height: 900px;
-    width: 99.7%;
+    height: 1696px;
+    width: 100%;
     top: 4600;
   }
 }
@@ -372,6 +390,81 @@ margin: 10;
   top: 160;
   left: 40;
   
+  }
+}
+.contactform {
+  position: absolute;
+  content: "";
+  top: 2700;
+  right: 300;
+  border: 2px solid;
+  height: 400px;
+  padding: 10px;
+background-color: #0d2b20;
+color: yellow;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .contactform {
+    position: absolute;
+  content: "";
+  top: 5490;
+ left: 1;
+  border: 2px solid;
+  height: 500px;
+  padding: 10px;
+  background-color: #0d2b20;
+  color: yellow;
+  width: 99.6%;
+  }
+  form {
+    color: rgb(255, 255, 255);
+  }
+}
+.gallery12 {
+  position: relative;
+  content: "";
+  top: 1000;
+  right: 380;
+}
+  @media screen and (max-width: 800px) {
+  .gallery12 {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    height: 900px;
+    top: 5400;
+   left: 120;
+  }
+}
+footer {
+  position: absolute;
+  content: "";
+  top: 3200;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  color: var(--white);
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    position: absolute;
+    content: "";
+    top: 6020;
   }
 }
 </style>
@@ -399,7 +492,7 @@ margin: 10;
 <div class="button">
   <label for="OrderOnline">OrderOnline</label>
 </div>
-<div class="main" style="background-color: beige;">
+<div class="main" style="background-color: rgb(112, 46, 82);">
   <center>
     <h1 style="padding-bottom: 30px;">About Us</h1>
   </center>
@@ -409,9 +502,13 @@ margin: 10;
 
 <div class="services">
 <div class="services_images">
-  <h1 style="color: rgb(239, 128, 9);" class="e">Our Services</h1>
+  <center>
+    <h1 style="color: rgb(239, 128, 9);" class="e">Our Services</h1>
+  </center>
 <div class="images">
-<img src="Images/cold_beverages.png" alt="" style="width: 240; height: 240;" class="img3">
+  <center>
+    <img src="Images/cold_beverages.png" alt="" style="width: 240; height: 240;" class="img3">
+  </center>
 <div class="Image_text">
   <center>
     <p>Hot Beverages</p>
@@ -421,16 +518,20 @@ margin: 10;
   </center>
   <br>
   <center>
-    <h2 style="color: rgb(235, 116, 5);">Special Combos</h2>
+    <h1 style="color: rgb(235, 116, 5);">Special Combos</h1>
   </center>
-  <img src="Images/special_combos.png" alt="" style="width: 240; height: 200;" class="img3">
+  <center>
+    <img src="Images/special_combos.png" alt="" style="width: 240; height: 200;" class="img3">
+  </center>
   <center>
     <p>Now it's really easy to chose your favourite eating and drinking combinations.    </p>
   </center>
 </div>
 </div>
 <div class="images">
-  <img src="Images/hot_beverages.png" alt="" style="width: 240; height: 240;" class="img4">
+  <center>
+    <img src="Images/hot_beverages.png" alt="" style="width: 240; height: 240;" class="img4">
+  </center>
   <div class="Image_text">
     <center>
       <p>Hot Beverages</p>
@@ -442,11 +543,15 @@ margin: 10;
    <center>
     <h3>Burger & French Fries</h3>
    </center>
-   <img src="Images/burger_frenchFries.png" alt="" style="width: 240; height: 240;" class="img4">
+   <center>
+    <img src="Images/burger_frenchFries.png" alt="" style="width: 240; height: 240;" class="img4">
+   </center>
   </div> 
 </div>
   <div class="images">
-    <img src="Images/refreshment.png" alt="" style="width: 240; height: 240;" class="img5">
+    <center>
+      <img src="Images/refreshment.png" alt="" style="width: 240; height: 240;" class="img5">
+    </center>
     <div class="Image_text">
       <center>
         <p>Hot Beverages</p>
@@ -454,7 +559,9 @@ margin: 10;
       <center>
         <p>Wide range of Steaming hot coffees to make you fresh and light.</p>
       </center>
-      <img src="Images/dessert.png" alt="" style="width: 240; height: 240;" class="img5">
+      <center>
+        <img src="Images/dessert.png" alt="" style="width: 240; height: 240;" class="img5">
+      </center>
     <center>
       <h3>Desserts</h3>
       <p>This for sure would satiate your palate and take you on a culinary treat.</p>
@@ -475,7 +582,9 @@ margin: 10;
     <center>
       <h2>Delicious Food</h2>
     </center>
-  <p>With a lavish spread of finger licking food, we serve to satisfy your palate and take you on a culinary treat.</p>
+    <center>
+      <p>With a lavish spread of finger licking food, we serve to satisfy your palate and take you on a culinary treat.</p>
+    </center>
   </div>
   <div class="container_text">
     <center>
@@ -484,8 +593,9 @@ margin: 10;
     <center>
       <h2>Pleasant Ambience</h2>
     </center>
-  
+  <center>
     <p>We seek to serve all our guests with the perfect dining experience. We provide perfect ambbience to cherish special moments.</p>
+  </center>
     </div>
     <div class="container_text">
       <center>
@@ -494,7 +604,9 @@ margin: 10;
    <center>
     <h2>Hospitality</h2>
    </center>
-      <p>Our staff members are happy to help. We go the extra mile to make you happy.</p>
+   <center>
+    <p>Our staff members are happy to help. We go the extra mile to make you happy.</p>
+   </center>
       </div>
   </div>
 </div>
@@ -502,9 +614,10 @@ margin: 10;
   
 </center>
 <div class="gallery">
-  <h1>Gallery</h1>
+  <div class="gallery_heading">
+    <h1>Gallery</h1>
+  </div>
 <div class="gallery_images">
-
 <img src="Images/gallery_1.jpg" alt="" style="height: 140; width: 160;">
 </div>
 <div class="gallery_images">
@@ -523,5 +636,30 @@ margin: 10;
           <img src="Images/gallery_6.jpg" alt="" style="height: 140; width: 160;">
           </div>
 </div>
+<div class="gallery12">
+  <h1>ContactUs</h1>
+</div>
+
+<div class="contactform">
+    <form action="">
+      <label for="FullName">FullName</label>
+      <input type="text" name="FullName" id="FullName"><br><br>
+      <label for="EmailId">EmailId</label>
+      <input type="text" name="EmailId" id="EmailId"><br><br>
+      <label for="YourNumber">YourNumber</label>
+      <input type="text" name="YourNumber" id="YourNumber">
+      <label for="Subject">Subject</label> 
+      <textarea name="subject" id="subject"></textarea> <br><br>
+      <input type="Submit" value="Submit">
+    </form>
+  </div>
+  <footer>
+    <h2>Useful Links</h2>
+    <p>About</p>
+    <p>Services</p>
+    <p>Why Us</p>
+    <p>Gallery</p>
+    <p>Contact</p>
+  </footer>
 </body>
-</html>
+</html> 
